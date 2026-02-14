@@ -27,6 +27,7 @@ This repository uses role-based agents to plan and deliver a Debian-installable 
 - [.ai/general/ROADMAP.md](.ai/general/ROADMAP.md)
 - [.ai/general/THREAT_MODEL.md](.ai/general/THREAT_MODEL.md)
 - [.ai/general/DEFINITIONS.md](.ai/general/DEFINITIONS.md)
+- [.ai/general/IMPLEMENTATION_PLAN.md](.ai/general/IMPLEMENTATION_PLAN.md)
 
 ## Agent Roles
 
@@ -135,6 +136,7 @@ When to call:
 
 ## Working Agreement
 - Always follow `.ai` standards and active ADRs.
+- Every modification or decision requires an ADR entry in `.adr/` (new ADR or explicit update to an existing ADR).
 - Propose minimal diffs with explicit intent and rollback path.
 - Use deterministic, repeatable steps for build/test/release workflows.
 - Never break Nginx reload safety; validate with `nginx -t` before reload.

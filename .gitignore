@@ -1,0 +1,13 @@
+# Go
+bin/
+*.test
+*.out
+coverage.out
+
+# Node
+node_modules/
+dist/
+
+# Editor/OS
+.DS_Store
+*.swp

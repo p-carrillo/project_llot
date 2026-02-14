@@ -1,0 +1,21 @@
+[Unit]
+Description=Nginx Traffic Intelligence Agent
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=nginx-ti
+Group=nginx-ti
+ExecStart=/usr/bin/nginx-ti-agent
+Environment=AGENT_DATA_FILE=/var/lib/nginx-ti-agent/events.jsonl
+Restart=on-failure
+RestartSec=2s
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/nginx-ti-agent /var/log/nginx-ti-agent
+
+[Install]
+WantedBy=multi-user.target

@@ -21,3 +21,4 @@
 - Roadmap (canonical): [`./general/ROADMAP.md`](./general/ROADMAP.md)
 - Threat model (canonical): [`./general/THREAT_MODEL.md`](./general/THREAT_MODEL.md)
 - Definitions (canonical): [`./general/DEFINITIONS.md`](./general/DEFINITIONS.md)
+- Implementation plan (canonical): [`./general/IMPLEMENTATION_PLAN.md`](./general/IMPLEMENTATION_PLAN.md)
